@@ -1,0 +1,144 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav{
+    margin-left: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+    font-size: 20px;
+}
+
+/*filme-principal*/
+main .filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.40), rgba(0,0,0,.40)100%), url('/img/banner-principal.jpg'); 
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    text-align: justify;
+}
+
+main .filme-principal .container{
+   width: 80%;
+}
+
+main .filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+main .filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+main .botoes .botao{
+    background-color: rgba(255,255,255);
+    border: none;
+    color: black;
+
+    padding: 15px 50px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+main .botoes .botao2{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 50px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+main .botoes .botao:hover {
+    background-color: #d3d3d3;
+    color: black;
+}
+
+main .botoes .botao2:hover {
+    background-color: white;
+    color: black;
+}
+
+main .botoes i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.menu-filmes,
+.menu-series, 
+.menu-desenhos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family:'Trebuchet MS', Arial, sans-serif;
+}
+
+.carrossel-filmes, 
+.carrossel-series,
+.carrossel-desenhos {
+    margin-left: 10px;
+    margin-right: 10px;
+}
